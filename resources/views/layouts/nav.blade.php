@@ -31,7 +31,7 @@
                         @endif
                     @else
                         <li class="has-dropdown">
-                            <a href="gallery">{{ Auth::user()->name }}</a>
+                            <a href="#">{{ Auth::user()->name }}</a>
                             <ul class="dropdown">
                                 <li><a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
