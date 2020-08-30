@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center logo-wrap">
-                <div id="fh5co-logo"><a href="/home">Online Restaurant Management<span>.</span></a></div>
+                <div id="fh5co-logo"><a href="/">Online Restaurant Management<span>.</span></a></div>
             </div>
             <div class="col-xs-12 text-center menu-1 menu-wrap">
                 <ul>
-                    <li><a href="/home">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/menu">Menu</a></li>
                     <li class="has-dropdown">
                         <a href="/gallery">Gallery</a>
