@@ -28,9 +28,13 @@
 <body>
     <div id="app">
         <div class="fh5co-loader"></div>
-        <main class="py-4">
-            @yield('content')
-        </main>
+        <div id="page">
+            @include('layouts.nav')
+            <main class="py-4">
+                @yield('content')
+            </main>
+            @include('layouts.footer')
+        </div>
         
         <div class="gototop js-top">
             <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
