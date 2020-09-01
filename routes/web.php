@@ -14,7 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/menu', function () {
+    return view('menu');
+});
+
+Route::get('/gallery', function () {
+    return view('gallery');
+});
+
+Route::get('/reservation', function () {
+    return view('reservation');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
 });
 
 Auth::routes();
