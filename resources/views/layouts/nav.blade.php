@@ -6,9 +6,9 @@
             </div>
             <div class="col-xs-12 text-center menu-1 menu-wrap">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/menu">Menu</a></li>
-                    <li class="has-dropdown">
+                    <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="/">Home</a></li>
+                    <li class="{{ (request()->is('menu*')) ? 'active' : '' }}"><a href="/menu">Menu</a></li>
+                    <li class="{{ (request()->is('gallery*')) ? 'active has-dropdown' : 'has-dropdown' }}">
                         <a href="/gallery">Gallery</a>
                         <ul class="dropdown">
                             <li><a href="#">Events</a></li>
@@ -16,16 +16,16 @@
                             <li><a href="#">Coffees</a></li>
                         </ul>
                     </li>
-                    <li><a href="/reservation">Reservation</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li class="active"><a href="/contact">Contact</a></li>
+                    <li class="{{ (request()->is('reservation*')) ? 'active' : '' }}"><a href="/reservation">Reservation</a></li>
+                    <li class="{{ (request()->is('about*')) ? 'active' : '' }}"><a href="/about">About</a></li>
+                    <li class="{{ (request()->is('contact*')) ? 'active' : '' }}"><a href="/contact">Contact</a></li>
 
                     @guest
-                        <li class="nav-item">
+                        <li class="{{ (request()->is('login')) ? 'active nav-item' : 'nav-item' }}">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         @if (Route::has('register'))
-                            <li class="nav-item">
+                            <li class="{{ (request()->is('register')) ? 'active nav-item' : 'nav-item' }}">
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
