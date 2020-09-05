@@ -37,6 +37,15 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/admin', function () {
+    return view('admin.index');
+});
+
+Route::get('/admin/card', function () {
+    return view('admin.cards');
+});
+
+
 Route::get('/admin/chart', function () {
     return view('admin.charts');
 });
