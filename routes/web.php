@@ -37,6 +37,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/admin/chart', function () {
+    return view('admin.charts');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
