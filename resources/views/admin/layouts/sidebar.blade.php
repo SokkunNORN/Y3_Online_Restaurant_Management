@@ -23,7 +23,7 @@
     </div>
 
     <li class="nav-item {{ request()->is('admin/button*') || request()->is('admin/card*') ? 'active' : '' }}">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link {{ request()->is('admin/button*') || request()->is('admin/card*') ? '' : 'collapsed' }}" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
         <i class="fas fa-fw fa-cog"></i>
         <span>Components</span>
         </a>
