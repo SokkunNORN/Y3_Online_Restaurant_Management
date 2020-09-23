@@ -37,6 +37,36 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::prefix('admin')->group(function () {
+    Route::get('/login', function () {
+        return view('admin.login');
+    });
+
+    Route::get('/', function () {
+        return view('admin.index');
+    });
+
+    Route::get('/dashboard', function () {
+        return view('admin.index');
+    });
+    
+    Route::get('/card', function () {
+        return view('admin.cards');
+    });
+
+    Route::get('/chart', function () {
+        return view('admin.charts');
+    });
+
+    Route::get('/buttons', function () {
+        return view('admin.buttons');
+    });
+
+    Route::get('/table', function () {
+        return view('admin.tables');
+    });
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
