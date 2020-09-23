@@ -77,7 +77,7 @@
 
 
 <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="./vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- Page level custom scripts -->
 <script src="../js/admin/demo/datatables-demo.js"></script>
